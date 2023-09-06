@@ -1,0 +1,127 @@
+body{
+  background-color: rgb(255, 253, 248);
+}
+
+.Project {
+    position:absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1000px;
+    width: 800px;
+    background-color: rgb(175, 223, 255);
+    padding: 20px;
+    border-radius: 20px ;
+    outline: 1px solid black;
+    }
+
+
+    
+.Appointment{
+    margin-top: 70px;
+    margin-left: 90px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(70, 70, 70);
+  font-size: 90px;
+  font-weight: normal;
+  align-items: center;
+}
+
+.Details{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Name{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputName{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.Phone{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputPhone{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+
+}
+.Date{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+    font-weight: normal;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputDate{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.Hour{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputHour{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.Submit{
+  align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    
+}
+
+.Submit:active {
+  background-color: #008ce3;
+  color:aliceblue;
+  transform: scale(0.95);
+}
+
+
+

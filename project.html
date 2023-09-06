@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" type="text/css" href="project.css"> -->
+
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    
+    <style>
+
+body{
+  background-color: rgb(255, 253, 248);
+}
+
+.Project {
+    position:absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1000px;
+    width: 800px;
+    background-color: rgb(175, 223, 255);
+    padding: 20px;
+    border-radius: 20px ;
+    outline: 1px solid black;
+    }
+
+
+    
+.Appointment{
+    margin-top: 70px;
+    margin-left: 90px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(70, 70, 70);
+  font-size: 90px;
+  font-weight: normal;
+  align-items: center;
+}
+
+.Details{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Name{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputName{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.Phone{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputPhone{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+
+}
+.Date{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+    font-weight: normal;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputDate{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.Hour{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(62, 62, 62);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputHour{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.Submit{
+  align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    
+}
+
+.Submit:active {
+  background-color: #008ce3;
+  color:aliceblue;
+  transform: scale(0.95);
+}
+    </style>
+
+</head>
+<body>
+
+
+<div class="Project">
+    <div class="Appointment">
+        Book an Appointment
+    </div>
+<form action="/submit" method="POST">
+    <div class="Details">
+        <div class="Name">
+            <label for="Name">Enter Your Name</label>
+            <input type="text" name="inputName" class="inputName">
+        </div>
+        <div class="Phone">
+            <label for="Phone"> Enter Your Phone Number </label>
+            <input type="text" name="inputPhone" class="inputPhone">
+        </div>
+        <div class="Date">
+            <label for="Date"> Select a Day </label>
+            <input type="date" name="inputDate" class="inputDate">
+        </div>
+        <div class="Hour">
+            <label for="Hour"> Seleect an Hour </label>
+            <input type="time" name="inputHour" class="inputHour">
+        </div>
+        <button class="Submit">Submit</button>
+    </div>
+</form>
+</div>
+
+<script src="project.js" charset="utf-8"></script>
+
+</body>
+</html>
